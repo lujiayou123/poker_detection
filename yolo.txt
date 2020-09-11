@@ -1,0 +1,9 @@
+”¶”√
+python detect.py --source ./inference/images/ --weights best.pt --conf 0.4
+
+—µ¡∑
+python train.py --data coco128.yaml --cfg yolov5s.yaml --weights '' --batch-size 16
+python train.py --data coco128.yaml --cfg yolov5s.yaml --weights '' --batch-size 16 --device 1
+python train.py --data poker.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
+
+python train.py --img 640 --batch 64 --epochs 1000 --data ./data/poker.yaml --cfg ./models/yolov5s.yaml --weights 'yolov5s.pt'
