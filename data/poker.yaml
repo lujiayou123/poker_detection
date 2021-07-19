@@ -1,0 +1,23 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco128
+#     /yolov5
+
+
+# download command/URL (optional)
+#download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./poker/images/poker_train/  # 128 images
+val: ./poker/images/poker_train/  # 128 images
+
+# number of classes
+nc: 104
+
+# class names
+names: ['As', ' ','2s', ' ','3s',' ', '4s', ' ','5s',' ', '6s',' ', '7s',' ', '8s',' ','9s', ' ','Ts',' ', 'Js',' ', 'Qs',' ','Ks',' ',
+        'Ah', ' ','2h',' ', '3h',' ', '4h', ' ','5h',' ', '6h',' ', '7h',' ', '8h',' ','9h',' ', 'Th',' ', 'Jh',' ', 'Qh',' ','Kh',' ',
+        'Ac',' ', '2c',' ', '3c',' ', '4c',' ', '5c',' ', '6c',' ', '7c',' ', '8c',' ','9c',' ', 'Tc',' ', 'Jc',' ', 'Qc',' ','Kc',' ',
+        'Ad',' ', '2d',' ', '3d',' ', '4d',' ', '5d',' ', '6d',' ', '7d',' ', '8d',' ','9d',' ', 'Td',' ', 'Jd',' ', 'Qd',' ','Kd',' ',]
